@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.3)
+project(parallelizing_game_of_life)
+file(GLOB all_files "*.c")
+SET(SOURCE_FILES pthread_game_of_life.c)
+ADD_EXECUTABLE(${PROJECT_NAME} ${SOURCE_FILES})
